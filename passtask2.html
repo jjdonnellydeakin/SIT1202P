@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #da9191;
+    color: rgb(154, 81, 81);
+  }
+
+  header {
+    background-color: #593f29;
+    color: rgb(154, 81, 81);
+    text-align: center;
+    padding: 1rem;
+  }
+
+  nav {
+    background-color: #593f29;
+    padding: 0.5rem;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 0 1rem;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  footer {
+    background-color: #593f29;
+    color: rgb(154, 81, 81);
+    text-align: center;
+    padding: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      font-size: 1.5rem;
+    }
+
+    nav li {
+      margin: 0 0.5rem;
+    }
+
+    .container {
+      width: 90%;
+      padding: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>My Responsive Web Design</h1>
+
+  </header>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h2>Welcome to My Website!</h2>
+    <p>As you can see this is an example webpage that results in being a responsive website!</p>
+</p>
+<img src="thisismyprofile.jpg" alt="Image of Jaimee Donnelly" width="200">
+<p>
+
+    ** To be noted the Home, About, Services and Contact home page buttons are not yet set up as this webpage is demonstrating just the screen responsiveness as of yet **
+  </div>
+  <footer>
+    <p>&copy; 2023 Jaimee's Responsive Design Website</p>
+  </footer>
+  <script>
+    // Jaimees's JavaScript Concepts
+
+    let str = "Hello, Lovely Humans!";
+    console.log("String Length:", str.length);
+    console.log("Uppercase:", str.toUpperCase());
+    console.log("Lowercase:", str.toLowerCase());
+    console.log("Substring:", str.substring(0, 5));
+    console.log("Index of 'Humans':", str.indexOf("Humans"));
+
+    let num = 123.456;
+    console.log("Fixed to 2 decimal places:", num.toFixed(2));
+    console.log("Exponential notation:", num.toExponential(2));
+    console.log("Converted to string:", num.toString());
+    console.log("Rounded to nearest integer:", Math.round(num));
+    console.log("Square root:", Math.sqrt(num));
+
+    let fruits = ["pineapple", "kiwi", "cherry"];
+    console.log("Array length:", fruits.length);
+    console.log("Join array into string:", fruits.join(", "));
+    console.log("Adding an element:", fruits.push("grape"));
+    console.log("Removing the last element:", fruits.pop());
+    console.log("Reversed array:", fruits.reverse());
+
+    let now = new Date();
+    console.log("Current date:", now.toLocaleDateString());
+    console.log("Current time:", now.toLocaleTimeString());
+    console.log("Day of the week:", now.getDay());
+    console.log("Milliseconds since Jan 1, 1970:", now.getTime());
+    console.log("Date 7 days from now:", new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000));
+
+    function greet(name) {
+      return "Hello Lovelies, " + name + "!";
+    }
+    console.log(greet("Jaimee"));
+
+    function add(a, b) {
+      return a + b;
+    }
+    console.log("Sum:", add(3, 5));
+  </script>
+</body>
+</html>
